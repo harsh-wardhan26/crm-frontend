@@ -6,6 +6,9 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Customers from "./pages/Customers";
 import ProtectedRoute from "./components/ProtectedRoute";
+import Leads from "./pages/Leads";
+import Tasks from "./pages/Tasks";
+import Sales from "./pages/Sales";
 
 function App() {
   return (
@@ -22,6 +25,10 @@ function App() {
             </ProtectedRoute>
           }
         />
+
+        <Route path="/leads" element={<Leads />} />
+        <Route path="/tasks" element={<Tasks />} />
+        <Route path="/sales" element={<Sales />} />
 
         <Route
           path="/customers"

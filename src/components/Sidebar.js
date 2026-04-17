@@ -24,6 +24,10 @@ function Sidebar() {
         </Link>
       </nav>
 
+      <Link to="/leads">Leads</Link>
+      <Link to="/tasks">Tasks</Link>
+      <Link to="/sales">Sales</Link>
+
       <button
         onClick={handleLogout}
         className="mt-10 bg-red-500 px-4 py-2 rounded hover:bg-red-600 transition"
